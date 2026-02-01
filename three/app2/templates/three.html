@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Methods</title>
+</head>
+<body>
+    
+    <h1>Django Methods</h1>
+
+    <p> {{ ok.p  }} </p>
+    <p> {{ ok.p|upper  }} </p>
+    <p> {{ ok.p|lower  }} </p>
+    <p> {{ ok.p|length  }} </p>
+    <p> {{ ok.p|truncatewords:5  }} </p>
+    <p> {{ ok.p|truncatechars:5  }} </p>
+
+     {% comment %} {% if ok.f > 5000 %}
+        <p>  Admission Done successfully </p>
+    {% endif %} {% endcomment %}
+
+
+    {% if ok.f > 5000 and ok.f <= 10000 %}
+
+        <p> Admission Done Successfully</p>
+
+    {% elif ok.f > 3000 and ok.f <= 5000 %}
+
+        <p> Admission pending due to fees reason </p>
+
+    {% else %}
+
+        <p> Admission cancel </p>
+
+    {% endif %}
+
+</body>
+</html>

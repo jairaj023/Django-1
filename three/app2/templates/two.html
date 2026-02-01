@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two page</title>
+</head>
+<body>
+    <h1>This is Two Page</h1>
+
+    <div>
+
+        <h2>Welcome to {{ data.coa }}</h2>
+
+        <h3>Name : {{ data.name }}</h3>
+
+        <p>Email : {{ data.email }}</p>
+
+        <p>Course : {{ data.course }}</p>
+
+        <p>Fees : {{ data.fees }}</p>
+
+        <ul>
+           
+
+            {% for skill in data.skills %}
+
+                 <li> {{ skill }}  </li>
+
+            {% endfor %}
+        </ul>
+
+    </div>
+</body>
+</html>

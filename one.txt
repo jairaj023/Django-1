@@ -1,0 +1,21 @@
+
+Django   =  A python framework use for allow use develop static and dynamic websites with python
+
+django version :   django 5.2
+
+Django work on  MVT model  
+
+1.  M = Model    =  use for database related data or business model of websites
+
+2. V = Views   =    Use for request and response or data according to user
+
+3. T  = Template  =  use for show html and css type of files 
+
+
+If you want to run django in system you need some setups
+
+1.   python --version
+
+2. pip --version  
+
+3. virtual enviroment   =   use for create a simple room for all the new django work

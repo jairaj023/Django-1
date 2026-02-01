@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block "title" %}<title> Home Page</title> {% endblock "title" %}
+    <link rel="stylesheet" href={% static 'css/master.css' %}>
+</head>
+<body>
+
+    <!-- <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul> -->
+
+    {% include "components/nav.html" %}
+   
+   
+   {% block "h1" %}
+    <h1>This is home page</h1>
+    {% endblock "h1" %}
+
+    <p>This is my Home page content</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus est, amet maiores distinctio laborum aperiam consequuntur? Maxime saepe vero vel tenetur perspiciatis obcaecati officiis esse quae qui quod, iure nesciunt?</p>
+
+    
+    {% include 'components/article.html' %}
+
+
+    {% block "footer" %}
+    <footer>
+        This is my home page footer
+    </footer>
+    {% endblock "footer" %}
+</body>
+</html>

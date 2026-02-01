@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One page</title>
+</head>
+<body>
+
+    <h1>This is one page</h1>
+
+    <!-- <h2>Welcome {{ name }}</h2> -->
+
+    <p> {{ stu.names }}  </p>
+
+    <table width="50%" border="1">
+    
+        <tr>
+            {% for name in stu.names %}
+                <td> {{ name }} </td>
+            {% endfor %}
+        </tr>
+
+        <tr>
+            {% for course in stu.course %}
+                <td> {{ course }} </td>
+            {% endfor %}
+        </tr>
+
+        <tr>
+            {% for fees in stu.fees %}
+                <td> {{ fees }} </td>
+            {% endfor %}
+        </tr>
+    </table>
+
+</body>
+</html>
