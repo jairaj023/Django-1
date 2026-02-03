@@ -1,0 +1,52 @@
+.ms {
+    height: 67px;
+    width: 100%;
+    background-color: aquamarine;
+
+}
+
+.ms p {
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+    margin-left: 40%;
+    padding-top: 14px;
+}
+
+.main {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid aquamarine;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+.heading {
+    font-weight: bold;
+    text-align: left;
+}
+
+.tag {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 8px 20px;
+    border: none;
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #00bfa5;
+    color: white;
+}
