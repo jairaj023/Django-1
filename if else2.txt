@@ -1,0 +1,89 @@
+and (operator)	multiplication (true/false)
+
+	0	and	0=0	false
+	0	and	1=0	false
+	1	and	0=0	false
+	1	and	1=1	true
+
+	both side of condition must be true
+----------------------------------------------------------------------
+or( operator) addition (true/false)
+
+	0	or	0=0	false
+	1	or	0=1	true
+	0	or	1=1	true
+	1	or	1=1	true
+
+	either side of condition must be true
+-------------------------------------------------------------------
+if
+elif
+elif
+...
+else
+----------------------------------------------------------------------
+#program of to find out greatest among three numbers
+-----------------------------------------------------------------------
+a=int(input("enter 1st number"))
+b=int(input("enter 2nd number"))
+c=int(input("enter 3rd number"))
+
+if a>=b and a>=c:
+    print(a," is greatest")
+elif b>=a and b>=c:
+    print(b," is greatest")
+else:
+    print(c," is greatest")
+------------------------------------------------------------------------
+#program of to find out whether entered alphabet is vowel or consonent
+--------------------------------------------------------------------------
+al=input("enter any alphabet")
+
+if al=='a' or al=='e' or al=='i' or al=='o' or al=='u':
+    print("vowel")
+else:
+    print("consonent")
+-----------------------------------------------------------------------
+#program of to find out division according to percentage of 5 subjects marks
+----------------------------------------------------------------------
+a=int(input("enter 1st subject marks"))
+b=int(input("enter 2nd subject marks"))
+c=int(input("enter 3rd subject marks"))
+d=int(input("enter 4th subject marks"))
+e=int(input("enter 5th subject marks"))
+
+per=(a+b+c+d+e)/5
+print("percentage=",per)
+
+if per>=60:
+    print("first division")
+elif per>=50 and per<60:
+    print("second division")
+elif per>=40 and per<50:
+    print("third division")
+else:
+    print("fail")
+---------------------------------------------------------------------------
+#program of to take input for temperature
+	temp<=0		freezing
+	temp0 to 10	very cold
+	temp 10 to 20	cold
+	temp 20 to 30	normal
+	temp 30 to 40	hot
+	otherwise	very hot
+----------------------------------------------------------------------------
+temp=int(input("Enter the temperature:"))
+
+if temp<=0:
+    print("freezing:")
+elif temp>=0 and temp<10:
+    print("very cold:")
+elif temp>=10 and temp<20:
+    print("cold:")
+elif temp>=20 and temp<30:
+    print("normal:")
+elif temp>=30 and temp<40:
+    print("hot:")
+else:
+    print("very hot:")
+-------------------------------------------------------------------------------

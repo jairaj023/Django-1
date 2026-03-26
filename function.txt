@@ -1,0 +1,86 @@
+function
+	-> are jump statements used to perform some specific task
+
+	two types of function
+
+	1. predefined function
+		input(),print()
+
+	2. user defined function
+		def samyak():
+
+	advantages of function
+		-> increases modularity
+		-> increases readability
+		-> increases reusability 
+------------------------------------------------------------------------------------------------
+def samyak():
+    print("hello")
+
+samyak()
+---------------------------------------------------------------------------------------------
+def samyak():
+    print("hello")
+
+samyak()
+samyak()
+samyak()
+---------------------------------------------------------------------------------------------
+call by value
+	-> passing parameters in a function
+-------------------------------------------------------------------------------------------------------
+def samyak(a):
+    print("value=",a)
+
+samyak(10)
+
+--------------------------------------------------------------------------------------------
+return value from a function
+--------------------------------------------------------------------------------------------
+def samyak(a):
+    return a+100
+
+b=samyak(10)
+print("b=",b)
+
+----------------------------------------------------------------------------------------------
+#program of to addition of two numbers using call by value
+-----------------------------------------------------------------------------------------------------
+def addition(a,b):
+    return a+b
+
+
+a=int(input("enter any number"))
+b=int(input("enter any number"))
+
+sum=addition(a,b)
+print("sum=",sum)
+-----------------------------------------------------------------------------------------------------
+#program of to find out greatest among three numbers using call by value
+-----------------------------------------------------------------------------------------------------
+def greatest(a,b,c):
+    if a>=b and a>=c:
+        print(a," is greatest")
+    elif b>=a and b>=c:
+        print(b," is greatest")
+    else:
+        print(c," is greatest")
+
+
+a=int(input("enter 1st number"))
+b=int(input("enter 2nd number"))
+c=int(input("enter 3rd number"))
+
+greatest(a,b,c)
+-------------------------------------------------------------------------------------------------------
+#program of to find out whether entered number is odd/even using call by value
+def checkOddEven(num):
+    if (num % 2 == 0):
+        print("it is even number:", num)
+    else:
+        print("it is odd number:", num)
+
+
+num=int(input("Enter any number:"))
+
+checkOddEven(num)
